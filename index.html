@@ -3,33 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacob Black | Salesforce Developer</title>
+  <meta name="description" content="Portfolio for Jacob Black, a Lead Salesforce Developer specializing in LWC, Salesforce architecture, secure integrations, and CI/CD." />
+  <title>Jacob Black | Lead Salesforce Developer</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Jacob Black home">Jacob Black</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <div class="nav-links" id="primary-menu">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
   <main>
-    <h1>Jacob Black</h1>
-    <p>Lead Salesforce Developer</p>
-    
-    <section>
-      <h2>About</h2>
+    <section class="intro container section-lg">
+      <p class="eyebrow">Lead Salesforce Developer</p>
+      <h1>Jacob Black</h1>
+      <p class="hero-copy">
+        Senior Salesforce Developer building secure Salesforce applications, practical architecture, and creative LWC experiences for teams with real compliance and delivery pressure.
+      </p>
+      <ul class="intro-meta" aria-label="Specialties">
+        <li>Lightning Web Components</li>
+        <li>Salesforce architecture</li>
+        <li>Apex, SOQL, Flow</li>
+        <li>OAuth and secure data handling</li>
+        <li>SFDX, GitLab, Jenkins</li>
+      </ul>
+      <nav class="quiet-actions" aria-label="Primary actions">
+        <a class="text-link" href="projects.html">Projects</a>
+        <a class="text-link" href="contact.html">Contact</a>
+        <a class="text-link" href="resume.pdf">Resume</a>
+      </nav>
+    </section>
+
+    <section class="container section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p class="lead">
+        I&rsquo;m a Senior Salesforce Developer with experience leading enhancement teams, designing solutions for architecture and security review, and mentoring developers as they grow into the platform.
+      </p>
       <p>
-        I build scalable Salesforce solutions with a focus on LWC, security, and system design.
+        My work spans LWC, Apex, SOQL, Flow, Experience Cloud, managed packages, Custom Metadata, CI/CD, and integration patterns. LWC is the part of the platform I keep coming back to because, within reason, the ceiling is your creativity: thoughtful components can turn Salesforce from a system people have to use into one that actually fits how they work.
       </p>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>Mobile Inspection Platform (Experience Cloud + OAuth)</li>
-        <li>LWC Form Customization Engine</li>
-      </ul>
+    <section class="container section" aria-labelledby="cred-heading">
+      <p class="eyebrow">Current focus</p>
+      <h2 id="cred-heading">Technical leadership with hands-on delivery.</h2>
+      <div class="work-list">
+        <article class="work-note">
+          <div>
+            <p class="project-meta">CGI Federal &middot; Oct 2024 - Present</p>
+            <h3>Senior Salesforce Developer</h3>
+            <p>Serving as tech lead across Salesforce enhancement projects, supporting architecture and security review, addressing static-analysis findings, and mentoring developers and admins.</p>
+          </div>
+        </article>
+
+        <article class="work-note">
+          <div>
+            <p class="project-meta">Training &middot; Mentorship</p>
+            <h3>Salesforce cohort development</h3>
+            <p>Designed and ran a Salesforce training cohort that helped five people earn 10 Salesforce certifications in four months without prior Salesforce experience.</p>
+          </div>
+        </article>
+
+        <article class="work-note">
+          <div>
+            <p class="project-meta">Certifications</p>
+            <h3>Application, data, sharing, and lifecycle architecture</h3>
+            <p>Certified across Salesforce architecture, development lifecycle and deployment, sharing and visibility, data architecture, administration, business analysis, Platform Developer I, and Platform App Builder.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: jacob.black.nova@gmail.com</p>
+    <section class="container section" aria-labelledby="featured-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Work notes</p>
+        <h2 id="featured-heading">A few problems I&rsquo;ve worked through.</h2>
+      </div>
+
+      <!-- These compact entries keep the homepage closer to a technical dossier than a marketing page. -->
+      <div class="work-list">
+        <article class="work-note">
+          <div>
+            <p class="project-meta">Apex &middot; LWC &middot; Managed Package</p>
+            <h3>Asset Management and Preventative Maintenance Package</h3>
+            <p>Salesforce package work for asset management, preventative maintenance, and client-specific reporting needs.</p>
+          </div>
+          <a class="text-link" href="projects/asset-management.html">Read case study</a>
+        </article>
+
+        <article class="work-note">
+          <div>
+            <p class="project-meta">Apex &middot; LWC &middot; Metadata</p>
+            <h3>Configurable Digital Forms Package</h3>
+            <p>Managed package with configurable Lightning Web Components that gave admins a creative, reusable way to build digital forms for asset procurement and consumption requests.</p>
+          </div>
+          <a class="text-link" href="projects.html">View project notes</a>
+        </article>
+
+        <article class="work-note">
+          <div>
+            <p class="project-meta">SFDX &middot; GitLab &middot; Jenkins</p>
+            <h3>Salesforce Release Pipeline</h3>
+            <p>CI/CD workflow using SFDX CLI, Jenkins, and GitLab to make Salesforce release management more repeatable across environments.</p>
+          </div>
+          <a class="text-link" href="projects.html">View project notes</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" aria-labelledby="work-style-heading">
+      <p class="eyebrow">How I work</p>
+      <h2 id="work-style-heading">Creative components, boring releases.</h2>
+      <div class="principle-list">
+        <p>
+          I love working with LWCs because they reward both engineering discipline and imagination. A good component can hide process complexity, make data entry feel natural, and give admins and users a Salesforce experience that feels built for them.
+        </p>
+        <p>
+          I like releases to be boring in the best possible way. That means prepping the change, understanding the environments, identifying metadata dependencies early, testing the risky paths, and making sure everyone knows what should happen before deploy day arrives.
+        </p>
+        <p>
+          My goal is to remove surprises: clean release notes, known rollback options, clear ownership, and enough pre-deployment validation that production is not where the team discovers a missing field, permission set, Flow dependency, or package component.
+        </p>
+      </div>
+    </section>
+
+    <section class="container section personal-section" aria-labelledby="personal-heading">
+      <p class="eyebrow">Beyond the work</p>
+      <h2 id="personal-heading">Also a person.</h2>
+      <p class="lead">
+        I&rsquo;m a father of two, an okay husband, an avid runner, and someone who tries to bring steady, positive energy into every team I&rsquo;m part of.
+      </p>
+      <p>
+        I care about building useful systems, but I also care about being someone people can actually enjoy working with: clear in communication, calm under pressure, and willing to help make the work better for everyone involved.
+      </p>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/TheMulletDev" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jacob-black-9761b7188/" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

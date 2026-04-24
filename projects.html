@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Salesforce project portfolio for Jacob Black, Lead Salesforce Developer." />
+  <title>Projects | Jacob Black</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Jacob Black home">Jacob Black</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <div class="nav-links" id="primary-menu">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container page">
+    <section class="section">
+      <p class="eyebrow">Project notes</p>
+      <h1>Salesforce work with real constraints.</h1>
+      <p class="lead">
+        Implementation stories drawn from Salesforce delivery work across LWC, managed packages, integrations, release management, support, and architecture review.
+      </p>
+    </section>
+
+    <section class="project-list" aria-label="Project list">
+      <!-- Add future projects as article elements to preserve the list semantics. -->
+      <article class="project-row">
+        <div>
+          <p class="project-meta">Apex &middot; LWC &middot; Managed Package &middot; Reporting</p>
+          <h2>Asset Management and Preventative Maintenance Package</h2>
+          <p>Salesforce package work for asset management, preventative maintenance workflows, and automated reporting tailored to client-specific needs.</p>
+        </div>
+        <a class="text-link" href="projects/asset-management.html">Case study</a>
+      </article>
+
+      <article class="project-row">
+        <div>
+          <p class="project-meta">Managed Package &middot; LWC &middot; Custom Metadata</p>
+          <h2>Configurable Digital Forms Package</h2>
+          <p>Admin-configurable Lightning Web Components for asset procurement and consumption requests, built around the idea that LWC can make Salesforce feel tailored instead of rigid.</p>
+        </div>
+        <a class="text-link" href="projects/asset-management.html">Sample format</a>
+      </article>
+
+      <article class="project-row">
+        <div>
+          <p class="project-meta">SFDX &middot; GitLab &middot; Jenkins &middot; QA Automation</p>
+          <h2>Salesforce Release Pipeline</h2>
+          <p>CI/CD pipeline using SFDX CLI tools, Jenkins, and GitLab to standardize validation and improve Salesforce release management.</p>
+        </div>
+        <a class="text-link" href="projects/asset-management.html">Sample format</a>
+      </article>
+
+      <article class="project-row">
+        <div>
+          <p class="project-meta">External Services &middot; Flow &middot; Automation</p>
+          <h2>VIN Decoder and Metadata Backup Automation</h2>
+          <p>Salesforce automation work including a VIN decoder built with External Services and Flow, plus metadata backup scripts using Shell and Python.</p>
+        </div>
+        <a class="text-link" href="projects/asset-management.html">Sample format</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/TheMulletDev" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jacob-black-9761b7188/" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

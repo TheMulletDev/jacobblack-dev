@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Asset management and preventative maintenance Salesforce case study by Jacob Black." />
+  <title>Asset Management Package | Jacob Black</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <script src="../main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="../index.html" aria-label="Jacob Black home">Jacob Black</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+      <div class="nav-links" id="primary-menu">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container page case-study">
+    <header class="case-hero section">
+      <a class="text-link" href="../projects.html">Back to projects</a>
+      <p class="eyebrow">Case study</p>
+      <h1>Asset Management and Preventative Maintenance Package</h1>
+      <p class="lead">
+        Salesforce package work focused on asset tracking, preventative maintenance workflows, and reporting that could adapt to client-specific operational needs.
+      </p>
+      <dl class="case-summary" aria-label="Project summary">
+        <div>
+          <dt>Role</dt>
+          <dd>Salesforce Developer / Technical Lead</dd>
+        </div>
+        <div>
+          <dt>Stack</dt>
+          <dd>Apex, LWC, Flow, Custom Metadata, managed packages</dd>
+        </div>
+        <div>
+          <dt>Focus</dt>
+          <dd>Package design, automation, reporting, maintainability</dd>
+        </div>
+      </dl>
+    </header>
+
+    <!-- Case study sections use a repeatable structure for future long-form project stories. -->
+    <section class="case-section" aria-labelledby="problem-heading">
+      <h2 id="problem-heading">Problem</h2>
+      <p>
+        Asset-heavy teams needed a more consistent way to track equipment, schedule preventative maintenance, and report on work without rebuilding the same Salesforce patterns for each client.
+      </p>
+      <p>
+        The solution needed to support repeatable package behavior while leaving enough room for client-specific reporting and configuration.
+      </p>
+    </section>
+
+    <section class="case-section" aria-labelledby="constraints-heading">
+      <h2 id="constraints-heading">Constraints</h2>
+      <ul class="content-list">
+        <li>Keep package behavior reusable across environments and client configurations.</li>
+        <li>Support maintenance workflows without hard-coding every operational variation.</li>
+        <li>Use Custom Metadata and configuration patterns where admins needed control.</li>
+        <li>Preserve clear ownership between package logic, automation, and reporting.</li>
+      </ul>
+    </section>
+
+    <section class="case-section" aria-labelledby="solution-heading">
+      <h2 id="solution-heading">Solution</h2>
+      <p>
+        I led development work for an asset management and preventative maintenance package, using Salesforce automation and package-friendly configuration patterns to support reusable workflows.
+      </p>
+      <p>
+        The implementation balanced packaged defaults with client-specific reporting needs, so teams could get useful operational views without turning the package into a one-off build.
+      </p>
+    </section>
+
+    <section class="case-section" aria-labelledby="architecture-heading">
+      <h2 id="architecture-heading">Architecture</h2>
+      <div class="diagram-placeholder" role="img" aria-label="Placeholder architecture diagram showing package configuration, LWC UI, Apex services, automation, and reporting">
+        <div>Package Configuration</div>
+        <span></span>
+        <div>LWC Interfaces</div>
+        <span></span>
+        <div>Apex Services</div>
+        <span></span>
+        <div>Flow Automation</div>
+        <span></span>
+        <div>Reporting</div>
+      </div>
+      <p>
+        Diagram placeholder: replace this block with a production architecture diagram when final implementation details are approved for public sharing.
+      </p>
+    </section>
+
+    <section class="case-section" aria-labelledby="decisions-heading">
+      <h2 id="decisions-heading">Key Decisions &amp; Tradeoffs</h2>
+      <ul class="content-list">
+        <li>Favored configuration-driven behavior where client variation was expected.</li>
+        <li>Kept reusable package logic separate from client-specific reporting requirements.</li>
+        <li>Used LWC where a focused interface could make asset and maintenance work easier to complete.</li>
+        <li>Balanced automation convenience with maintainability for admins and future developers.</li>
+      </ul>
+    </section>
+
+    <section class="case-section" aria-labelledby="results-heading">
+      <h2 id="results-heading">Results / Impact</h2>
+      <p>
+        The package gave teams a reusable foundation for asset management and preventative maintenance while still supporting the reporting differences that show up in real client environments.
+      </p>
+    </section>
+
+    <section class="case-section" aria-labelledby="improve-heading">
+      <h2 id="improve-heading">What I&rsquo;d Improve</h2>
+      <p>
+        I would expand admin-facing documentation, add more automated regression coverage around configurable behavior, and build clearer examples for common reporting variations.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-links">
+        <a href="https://github.com/TheMulletDev" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/jacob-black-9761b7188/" rel="noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
